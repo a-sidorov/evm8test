@@ -31,7 +31,7 @@ static inline uint64_t rdtsc(void) {
  return ((uint64_t) lo) | (((uint64_t) hi) << 32u);
 }
 
-static long long prog(size_t size){
+static size_t prog(size_t size){
  return (size-1)*size/2;
 
 }
